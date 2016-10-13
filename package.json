@@ -1,0 +1,26 @@
+{
+  "name": "atb_componentes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "install": "gulp",
+    "copy": "gulp copy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^13.1.0",
+    "flux": "^3.0.0",
+    "gulp": "^3.9.1",
+    "httpdispatcher": "^1.0.0",
+    "mkdirp": "^0.5.1",
+    "mkdirp-stream": "0.0.2",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "reactify": "^1.1.1",
+    "read-file": "^0.2.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
