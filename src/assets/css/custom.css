@@ -1,0 +1,22 @@
+/* Add here all your css styles (customizations) */
+.agenda h2 { color: #FFF }
+.agenda h3 {  color: #FFF }
+.agenda p  {color: #FFF }
+
+.mega-menu-content a:hover h3 { color: #3096ff !important;   }
+.mega-menu-content a:hover   {   text-decoration: none !important }
+.mega-menu-content a:hover img   {  border: 5px solid #3096ff; padding: 1px;  }
+
+.cbp-filter-item-active { border-bottom: 2px solid #3096ff;   }
+
+.accesos { background: #f8f8f8; padding-top: 30px }
+ 
+ 
+.owl-work-v1 .item a strong {
+    color: #FFF !important;
+    display: block;
+}
+.dn { display: none !important }
+
+ 
+   

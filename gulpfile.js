@@ -34,7 +34,7 @@ gulp.task('copy', function(){
 	.pipe(gulp.dest('dist/assets'));	
 });
 
-gulp.task('esqueleto',['esqueleto']);
+//gulp.task('esqueleto',['esqueleto']);
 
 gulp.task('default',['browserify'], function(){
 	return gulp.watch('src/**/*.*',['browserify'])

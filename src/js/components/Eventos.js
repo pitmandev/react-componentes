@@ -26,8 +26,21 @@ var Eventos = React.createClass({
 
 		var imagenes = this.state.eventos.map(function(evento, index){
 			return(
-				<img className='img-responsive' key={index} src={evento.link_urls.url} alt=''/>				
-				)
+				<div className='owl-wrapper' style={wrapperStyle}  key={index}>
+					<div className='owl-item' style={divStyle}>
+						<div className='item'>
+							<a href='#' className='imglink'>
+								<em className='overflow-hidden'>
+									<img className='img-responsive' key={index} src={evento.link_urls.url} alt=''/>
+								</em>
+								<span>
+									<strong>Id element |&nbsp;</strong>
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			)
 		});
 
 		var divStyle = {
@@ -40,22 +53,9 @@ var Eventos = React.createClass({
 		};
 
 		return(
-			<div className='owl-wrapper' style={wrapperStyle}>
-				<div className='owl-item' style={divStyle}>
-					<div className='item'>
-						<a href='#' className='imglink'>
-							<em className='overflow-hidden'>
-
-								{imagenes}
-
-							</em>
-							<span>
-								<strong>Id element |&nbsp;</strong>
-							</span>
-						</a>
-					</div>
+				<div>
+					{imagenes}
 				</div>
-			</div>
 		);
 	}
 });
