@@ -1,8 +1,10 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 
-var IslasAgenda = require('./components/Islas');
-var Eventos = require('./components/Eventos');
+var Islas = require('./components/Islas');
+var Destacados = require('./components/Destacados');
+var Recomendaciones = require('./components/Recomendaciones');
 
-ReactDOM.render(<IslasAgenda />,document.getElementById('islas'));
-ReactDOM.render(<Eventos />,document.getElementById('eventos'));
+ReactDOM.render(<Islas />,document.getElementById('islas'));
+ReactDOM.render(<Destacados />,document.getElementById('grid-container'));
+ReactDOM.render(<Recomendaciones />,document.getElementById('recomendaciones'));

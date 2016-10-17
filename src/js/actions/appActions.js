@@ -1,21 +1,21 @@
 var appDispatcher = require('../dispatchers/appDispatcher');
 
 module.exports = {
-	redirige: function(accion){
+	updateDestacados: function(data){
+		console.warn('[appActions] ciclo vida 3 (updateDestacados) destacados: ' + data);
 		var action = {
-			actionType: "REDIRIGIR",
-			url: accion
+			actionType: "UPDATE_DESTACADOS",
+			destacados: data
 		};
-		appDispatcher.dispatch(accion);
-	},
-	updateEventos: function(data){
-		console.warn('ciclo vida 3 eventos: ' + data.eventos);
-		var action = {
-			actionType: "UPDATE_EVENTOS",
-			eventos: data.eventos
-		};
-		console.warn('ciclo vida 3 y medio, url: ' + action.eventos[0].link_urls.url);
-
+		console.warn('[appActions] updateDestacados ciclo vida 3 y medio, url: ' + action.destacados.data[0].link_urls.url);
 		appDispatcher.dispatch(action);
-	}
+	},
+	updateRecomendaciones: function(data){
+		var action = {
+			actionType: "UPDATE_RECOMENDACIONES",
+			recomendaciones: data
+		};
+		console.warn('[appActions] updateRecomendaciones ciclo vida 3 y medio, url: ' + action.recomendaciones.data[0].multimedia.multimedia_type.url);
+		appDispatcher.dispatch(action);
+	}	
 };
